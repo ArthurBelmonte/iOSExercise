@@ -81,15 +81,13 @@ static NSString *defaultImage = @"http://www.imf.org/external/am/2014/img/icon_a
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 #pragma mark - My methods
 
-- (NSString *)parseString:(NSString *)string
-{
+- (NSString *)parseString:(NSString *)string {
     if (string == nil || string == (id)[NSNull null]) {
         return @"";
     }
